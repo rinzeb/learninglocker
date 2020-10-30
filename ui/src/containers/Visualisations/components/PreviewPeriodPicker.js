@@ -9,6 +9,7 @@ import {
   LAST_6_MONTHS,
   LAST_1_YEAR,
   LAST_2_YEARS,
+  LAST_5_YEARS,
 } from 'ui/utils/constants';
 
 /**
@@ -36,6 +37,7 @@ const PreviewPeriodPicker = ({
       <option value={LAST_6_MONTHS}>Last 6 months</option>
       <option value={LAST_1_YEAR}>Last 1 year</option>
       <option value={LAST_2_YEARS}>Last 2 years</option>
+      <option value={LAST_5_YEARS}>Last 5 years</option>
     </select>
   );
 };

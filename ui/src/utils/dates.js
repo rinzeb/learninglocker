@@ -8,6 +8,7 @@ import {
   LAST_24_HOURS,
   LAST_1_YEAR,
   LAST_2_YEARS,
+  LAST_5_YEARS,
   TODAY
 } from 'ui/utils/constants';
 
@@ -31,6 +32,7 @@ export const periodToDate = (period, timezone, currentMoment, benchmark = 1) => 
     case LAST_6_MONTHS: return cloned.subtract(6 * benchmark, 'months');
     case LAST_1_YEAR: return cloned.subtract(1 * benchmark, 'years');
     case LAST_2_YEARS: return cloned.subtract(2 * benchmark, 'years');
+    case LAST_5_YEARS: return cloned.subtract(5 * benchmark, 'years');
     default: return cloned.subtract(7 * benchmark, 'days');
   }
 };
